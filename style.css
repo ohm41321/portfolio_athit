@@ -69,6 +69,16 @@ h1.name{
     border-radius: 5px; /* Optional rounded corners */
     transition: transform 1s ease, box-shadow 0.3s ease; 
 }
+.trans {
+    max-width: 100%; 
+    height: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.trans:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
 .h-skill{
     font-size: 20px;
     text-align: center;
@@ -80,8 +90,8 @@ h1.name{
     margin: 0 50px;
 }
 .certi:hover {
-    transform: scale(1.05); /* Scales up the image when hovered */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhances shadow on hover */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
 }
 
 h5{
