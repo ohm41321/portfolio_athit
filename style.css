@@ -24,16 +24,23 @@ p.bio{
     margin-bottom: 50px;
 } */
 .logo {
-    width: 100%; 
-    max-width: 500px; 
-    height: auto; 
-    border-radius: 10%; 
-    display: block;
-    margin: 50px auto; 
+    width: 100%;             
+    max-width: 500px;          
+    max-height: 500px;        
+    object-fit: cover;        
+    border-radius: 30%;        
+    display: block;          
+    margin: 50px auto;        
     transition: transform 1s ease, box-shadow 1s ease; 
 }
-.logo:hover{
-    transform: scale(1.1);
+.logo:hover {
+    transform: scale(1.05);     
+}
+@media (max-width: 768px) {
+    .logo {
+        max-width: 300px;        /* Reduce the max-width on mobile */
+        max-height: 300px;
+    }
 }
 h1.name{
     text-transform: uppercase;
